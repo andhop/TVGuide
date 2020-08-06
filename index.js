@@ -1,5 +1,5 @@
 const express = require("express");
-const TvGuide = require("./tvGuide");
+const TvGuide = require("./components/tvGuide");
 const Settings = require("./settings.json");
 const routes = require("./components/route");
 const path = require("path");
