@@ -1,4 +1,4 @@
-const express = require("express");
+aconst express = require("express");
 const TvGuide = require("./components/tvGuide");
 const Settings = require("./settings.json");
 const routes = require("./components/route");
@@ -13,8 +13,8 @@ app.use(routes);
 const server = app.listen("8182",() => {
   console.log(`listening on ${server.address().address} : ${server.address().port}`);
 });
-
-/*const guide = TvGuide.GetFeed();
+// just adding to check for ssh with github
+/*const guide= TvGuide.GetFeed();
 console.log("The Guide");
 console.log("--------------------------");
 console.log(guide);*/
