@@ -1,4 +1,4 @@
-aconst express = require("express");
+const express = require("express");
 const TvGuide = require("./components/tvGuide");
 const Settings = require("./settings.json");
 const routes = require("./components/route");
