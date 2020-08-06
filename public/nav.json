@@ -1,0 +1,49 @@
+{
+  "logo_links_to": "/",
+  "routes" : [ 
+  {
+    "route": "/",
+    "text": "home",
+    "view": "index",
+    "icon": "",
+    "processor": "home"
+    
+  },
+  {
+    "route": "/channels",
+    "text": "Channels",
+    "view": "channels",
+    "icon": "",
+    "processor": "channels",
+    "dynamic_routes": [
+      {
+        "route": "/channels/channel/:channelId"
+      }
+    ]
+  },
+  {
+    "route": "/whats-on-now",
+    "text": "Whats On Now",
+    "icon": "",
+    "processor": "whatsOnNow",
+    "dynamic_routes": [
+      {
+        "route": "/whats-on-now/show/:showId",
+        "processor" : "whatsOnNowShow" 
+      }
+    ]
+  },
+   {
+    "route": "/guide",
+    "text": "Tv Guide",
+    "icon": "",
+    "processor": "tvGuide",
+    "dynamic_routes": [
+      {
+        "route": "/guide/show/:showId",
+        "processor" : "show"
+      }
+    ]
+  }
+  ]
+}
